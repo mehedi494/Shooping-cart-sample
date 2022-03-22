@@ -27,11 +27,11 @@
 
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="number" min="0" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           <button id="mobile-minus-btn" class="btn btn-default"><i class="fas fa-minus" ></i></button>
+                           <input id="mobile-input-number" readonly type="number" min="0" class="form-control text-center" value="1">
+                           <button class="btn btn-default" id="mobile-plus-btn"><i class="fas fa-plus" ></i></button>
                         </div>
-                        <h5>$1219</h5>
+                        <h5>$<span id="mobilePrice">1219</span></h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
@@ -45,12 +45,12 @@
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="number" min="0" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           <button class="btn btn-default"><i class="fas fa-minus" id="case-minus-btn"></i></button>
+                           <input id="case-input-number" readonly type="number" min="0" class="form-control text-center" value="1">
+                           <button  class="btn btn-default"><i class="fas fa-plus" id="case-plus-btn"></i></button>
 
                         </div>
-                        <h5>$59</h5>
+                        <h5>$ <span id="casePrice">59</span></h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
@@ -79,6 +79,7 @@
          </div>
       </div>
    </section>
+   <script src="app.js"></script>
 </body>
 
 </html>
